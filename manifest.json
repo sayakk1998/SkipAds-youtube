@@ -1,0 +1,28 @@
+{
+    "name" : "Youtube-SkipAd",
+    "description" : "Skip Ads of Youtube by Sayak Kundu",
+    "version" : "1.0",
+    "manifest_version" : 3,
+
+
+    "content_scripts" : [{
+        "js" : ["script.js"],
+        "run_at" : "document_idle",
+        "matches" : ["<all_urls>"]
+    }],
+
+    "permissions" : [
+        "tabs",
+        "activeTab"
+    ],
+
+    "icons": { "128": "logo_skip.png"},
+
+    "action" : 
+    {
+        "default_icon" : "logo_skip.png",
+        "default_popup" : "popup.html"
+    }
+
+}
+
